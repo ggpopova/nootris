@@ -1,0 +1,41 @@
+.page-header {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  @media (max-width: $desktop) {
+    position: static;
+  }
+
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: auto;
+  padding: 14px 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (max-width: $desktop) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100px;
+  }
+}

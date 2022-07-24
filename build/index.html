@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nootris</title>
+    <meta name="description" content="NOOTRIS HELPS. Your body during a pandemic and seasonal colds.">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+
+  <body class="modalfull-body">
+    <div class="container">
+      <header class="page-header">
+        <a class="page-header__logo" href="#" aria-label="NOOTRIS">
+          <svg width="120" height="35" viewBox="0 0 120 35" aria-label="Nootris">
+            <use xlink:href="img/sprite.svg#icon-nootris-logo"></use>
+          </svg>
+        </a>
+
+        <nav class="menu-nav menu-nav-nojs">
+          <button class="menu-nav__toggle menu-nav__btn" type="button"><span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="menu-nav__wrapper">
+            <ul class="menu-nav__list">
+              <li class="menu-nav__item">
+                <a class="menu-nav__link" href="#">FAQ</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link" href="#">Оплата и доставка</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link" href="#">Возврат</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link" href="#">Исследования</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link" href="#">Личный кабинет</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link" href="tel:88(800)600-09-90">8 8 (800) 600-09-90</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <a class="page-header__basket">
+          <svg width="32" height="32" viewBox="0 0 32 32" aria-label="basket">
+            <use xlink:href="img/sprite.svg#icon-basket"></use>
+          </svg>
+        </a>
+      </header>
+    </div>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">NOOTRIS HELPS. Your body during a pandemic and seasonal colds.</h1>
+      <picture>
+        <source type="image/webp" srcset="img/index@1x.webp 1x, img/index@2x.webp 2x">
+        <img class="page-main__image" src="img/index@1x.png" srcset="img/index@1x.png 2x" alt="NOOTRIS. Тубик с витаминами">
+    </picture>
+      <section class="promo">
+        <div class="container">
+          <h2 class="promo__title">АКТИВИРУЙ ИММУНИТЕТ!</h2>
+          <p class="promo__description">Всего пять секунд в день помогут укрепить иммунитет и повысить защитные силы организма</p>
+          <h3 class="promo__heading">NOOTRIS ПОМОГАЕТ</h3>
+          <p class="promo__text">Вашему организму во время пандемии и сезонных простуд</p>
+        </div>
+      </section>
+
+      <section class="product">
+        <h2 class="product__title">ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА <span class="product__text">СО СКИДКОЙ -15% ПЕРВЫМ!</span></h2>
+        <p class="product__new-price">690&#8381;<span class="product__old-price">750&#8381;</span></p>
+        <ul class="product__wrapper container">
+          <li class="product__list">
+            <picture>
+              <source type="image/webp" srcset="img/ginger@1x.webp 1x, img/ginger@2x.webp 2x">
+              <!-- 1х: 480px; 2x: 480px -->
+              <img src="img/ginger@1x.png" srcset="img/ginger@2x.png 2x" width="193" height="168" alt="ginger">
+            </picture>
+            <h2 class="product__advantage">Содержит<br/><span class="product__description">имбирь</span></h2>
+          </li>
+          <li class="product__list">
+            <picture>
+              <source type="image/webp" srcset="img/nootris@1x.webp 1x, img/nootris@2x.webp 2x">
+              <!-- 1х: 480px; 2x: 480px -->
+              <img src="img/nootris@1x.png" srcset="img/nootris@2x.png 2x" width="480" height="320" alt="nootris">
+            </picture>
+            <h2 class="product__delivery">+ Бесплатная доставка</h2>
+            <p class="product__special-price">Специальная цена</p>
+          </li>
+          <li class="product__list">
+            <picture>
+              <source type="image/webp" srcset="img/vorus@1x.webp 1x, img/vorus@2x.webp 2x">
+              <!-- 1х: 192px; 2x: 384px -->
+              <img src="img/vorus@1x.png" srcset="img/vorus@1x.png 2x" width="192" height="160" alt="vorus">
+            </picture>
+            <h2 class="product__advantage">Нейтрализует<br/><span class="product__description">вирусы</span></h2>
+          </li>
+        </ul>
+        <button class="button button--order" type="button">Оформить заказ!</button>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+.menu-nav {
+  @media (max-width: $desktop) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.menu-nav--closed .menu-nav__btn::before {
+  @media (max-width: $desktop) {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 24px;
+    height: 2px;
+    box-shadow: 0 8px 0 0 $basic-color, 0 16px 0 0 $basic-color, 0 24px 0 0 $basic-color;
+  }
+}
+
+.menu-nav--closed .menu-nav__wrapper {
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
+.menu-nav--opened .menu-nav__btn {
+  @media (max-width: $desktop) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 23px;
+      width: 25px;
+      height: 2px;
+      background-color: $basic-color;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.menu-nav__list {
+  @include list-style;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 66px;
+  padding-left: 10px;
+
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu-nav__item {
+  display: flex;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-end;
+    border: none;
+  }
+}
+
+.menu-nav--opened .menu-nav__list {
+  width: auto;
+
+  @media (max-width: $desktop) {
+    position: absolute;
+    top: 78px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: $basic-background;
+    z-index: 3;
+    margin-bottom: 11px;
+    margin-left: 36px;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+}
+
+.menu-nav__wrapper {
+  @media (max-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.menu-nav__link {
+  padding: 14px 20px;
+}
+
+.page-header__basket {
+  margin-left: auto;
+  padding: 10px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.menu-nav--opened .menu-nav__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  @media (max-width: $desktop) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 10px 50px;
+  }
+}

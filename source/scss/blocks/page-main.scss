@@ -1,0 +1,34 @@
+.page-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.page-main__image {
+  position: absolute;
+  z-index: 0;
+  top: -80px;
+  left: 44%;
+  width: 816px;
+  height: 984px;
+
+  @media (max-width: $desktop) {
+    top: -10px;
+    left: 39%;
+    width: 453px;
+    height: auto;
+  }
+
+  @media (max-width: $tablet) {
+    top: -20px;
+    left: 30%;
+    width: 341px;
+  }
+
+  @media (max-width: $tablet-min) {
+    top: -20px;
+    left: 18%;
+    width: 250px;
+  }
+}
